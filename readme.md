@@ -74,13 +74,38 @@ Returns the index of a specific *k*-mer in the Frequency Chaos Game Representati
 - `tuple`: The row and column indices of the *k*-mer in the CGR key matrix.
 
 ```bash
-return_kmer_at_index(kmer_length: int, tuple_index: tuple)
+fcgr.return_kmer_at_index(kmer_length: int, tuple_index: tuple)
 ```
 Returns the *k*-mer at the specified index in the Frequency Chaos Game Representation (FCGR) key matrix.
 
 #### Parameters
 * kmer_length (int): The length of the *k*-mer used to generate the Frequency Chaos Game Representation (FCGR) matrix.
 * tuple_index (tuple): The index (row, column) of the *k*-mer in the matrix.
+
+#### Return
+* str: The *k*-mer at the specified index.
+
+
+  
+```bash
+### chaos_frequency_matrix(fasta_string: str, kmer_length: int, chaos_game_kmer_array: np.array = None, pseudo_count: bool = True)
+```
+
+Generates the chaos frequency matrix for the given DNA sequence.
+
+This function calculates the Chaos Frequency Matrix (CFM) for a given DNA sequence and k-mer length, using the Chaos Game Representation (CGR) key matrix.
+
+#### Parameters
+* fasta_string (str): The DNA sequence in FASTA format.
+* kmer_length (int): The length of the k-mers to consider.
+* chaos_game_kmer_array (np.array, optional): The Frequency Chaos Game Representation (FCGR) key matrix. Defaults to None.
+* pseudo_count (bool, optional): Whether to apply pseudo-counts to the matrix. Defaults to True.
+
+#### Return
+* tuple: A tuple containing:
+  - np.array: The Frequency Chaos Game Representation (FCGR) representing *k*-mer frequencies.
+  - np.array: The Frequency Chaos Game Representation (FCGR) key matrix used.
+
 
 #### Return
 * str: The *k*-mer at the specified index.
