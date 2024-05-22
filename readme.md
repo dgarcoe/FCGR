@@ -84,13 +84,10 @@ Returns the *k*-mer at the specified index in the Frequency Chaos Game Represent
 
 #### Return
 * str: The *k*-mer at the specified index.
-
-
   
 ```bash
-### fcgr.chaos_frequency_matrix(fasta_string: str, kmer_length: int, chaos_game_kmer_array: np.array = None, pseudo_count: bool = True)
+fcgr.chaos_frequency_matrix(fasta_string: str, kmer_length: int, chaos_game_kmer_array: np.array = None, pseudo_count: bool = True)
 ```
-
 Generates the chaos frequency matrix for the given DNA sequence.
 
 This function calculates the Frequency Chaos Game Representation (FCGR) for a given DNA sequence and *k*-mer length, using the FCGR key matrix.
@@ -99,13 +96,24 @@ This function calculates the Frequency Chaos Game Representation (FCGR) for a gi
 * fasta_string (str): The DNA sequence in FASTA format.
 * kmer_length (int): The length of the *k*-mers to consider.
 * chaos_game_kmer_array (np.array, optional): The Frequency Chaos Game Representation (FCGR) key matrix. Defaults to None.
-* pseudo_count (bool, optional): Whether to apply pseudo-counts to the matrix. Defaults to True.
+* pseudo_count (bool, optional): Whether to add 1 to each element of the matrix. Defaults to True.
 
 #### Return
 * tuple: A tuple containing:
   - np.array: The Frequency Chaos Game Representation (FCGR) representing *k*-mer frequencies.
   - np.array: The Frequency Chaos Game Representation (FCGR) key matrix used.
+ 
+```bash    
+fcgr.chaos_frequency_dictionary(fasta_string: str, kmer_length: int, chaos_game_kmer_array: np.array = None, pseudo_count: bool = True)
+```
+Calculate the frequency dictionary of *k*-mers in a chaos game representation matrix.
 
+#### Parameters
+* fasta_string (str): The input DNA sequence in FASTA format.
+* kmer_length (int): The length of *k*-mers.
+* chaos_game_kmer_array (np.array): Chaos game *k*-mer array if pre-calculated, otherwise None.
+* pseudo_count (bool): Whether to add 1 to each element of the matrix. Defaults to True.
 
-#### Return
-* str: The *k*-mer at the specified index.
+#### Returns
+* frequency_dictionary (dict): A dictionary containing *k*-mer as keys and their frequencies as values.
+
