@@ -28,6 +28,24 @@ fcgr can be installed with pip as shown below,
 
 ```bash
 !pip install fcgr-0.1-py3-none-any.whl
+
 ```
+
+## fcgr functionality
+
+
+## SCellBOW_pretrain
+
+Create the pre-trained model from the source dataset.
+
+### Input Arguments
+
+The arguments are as follows:
+
+- `adata_source`: the preprocessed `scanpy.anndata` for the source dataset.
+- `save_dir`: name of the directory to save the source model.
+- `vec_size`: dimensionality of the embedding vectors. Defaults to 300 for SCellBOW.
+- `n_worker`: number of worker threads to train the model. For a fully deterministically-reproducible run, limit the model to one worker thread. Defaults to 1 for SCellBOW.
+- `iter`: Number of iterations (epochs) over the corpus. Defaults to 20 for SCellBOW.
 
 
