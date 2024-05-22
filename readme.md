@@ -34,7 +34,7 @@ fcgr can be installed with pip as shown below,
 ## fcgr functionality
 
 ```bash
-### read_fasta(file_path: str)
+### fcgr.read_fasta(file_path: str)
 ```
 
 Reads a FASTA file at the given `file_path` and concatenates the sequences into a single string.
@@ -47,9 +47,9 @@ Reads a FASTA file at the given `file_path` and concatenates the sequences into 
 
 - `str`: Concatenated DNA sequence from the FASTA file.
 
-
-### chaos_game_representation_key(kmer_length: int)
-
+```bash
+### fcgr.chaos_game_representation_key(kmer_length: int)
+```
 Generates the key matrix for Chaos Game Representation (CGR) for the given k-mer length.
 
 #### Parameters
