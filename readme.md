@@ -34,11 +34,11 @@ fcgr can be installed with pip as shown below,
 ## fcgr functionality
 
 
-## SCellBOW_pretrain
+### read_fasta(file_path: str)
 
-Create the pre-trained model from the source dataset.
+Reads a FASTA file at the given `file_path` and concatenates the sequences into a single string.
 
-### Input Arguments
+#### Input Arguments
 
 The arguments are as follows:
 
