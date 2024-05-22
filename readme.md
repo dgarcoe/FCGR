@@ -4,7 +4,7 @@ Frequency Chaos Game Representation (FCGR), an extension of Chaos Game Represent
 
 ## Usage
 
-The fcgr Python package offers a wide array of functionalities for generating FCGR matrices and more:
+The fcgr Python package offers a wide array of functionalities for generating FCGR matrix and more:
 
 * Read a FASTA file to generate a concatenated DNA sequence.
 * Generate the FCGR kmer matrix key based on the specified kmer length.
