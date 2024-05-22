@@ -45,3 +45,16 @@ Reads a FASTA file at the given `file_path` and concatenates the sequences into 
 #### Return
 
 - `str`: Concatenated DNA sequence from the FASTA file.
+
+
+### chaos_game_representation_key(kmer_length: int)
+
+Generates the key matrix for Chaos Game Representation (CGR) for the given k-mer length.
+
+#### Parameters
+
+- `kmer_length` (int): The length of the k-mer.
+
+#### Returns
+
+- `np.ndarray`: A 2D numpy array representing the key matrix for CGR.
