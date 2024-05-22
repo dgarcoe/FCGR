@@ -61,7 +61,7 @@ Generates the key matrix for Frequency Chaos Game Representation (FCGR) for the 
 - `np.ndarray`: A 2D numpy array representing the key matrix for CGR.
 
 ```bash
-return_kmer_index(kmer: str)
+fcgr.return_kmer_index(kmer: str)
 ```
 Returns the index of a specific *k*-mer in the Frequency Chaos Game Representation (FCGR) key matrix.
 
@@ -72,3 +72,15 @@ Returns the index of a specific *k*-mer in the Frequency Chaos Game Representati
 #### Returns
 
 - `tuple`: The row and column indices of the *k*-mer in the CGR key matrix.
+
+```bash
+return_kmer_at_index(kmer_length: int, tuple_index: tuple)
+```
+Returns the *k*-mer at the specified index in the Frequency Chaos Game Representation (FCGR) key matrix.
+
+#### Parameters
+* kmer_length (int): The length of the *k*-mer used to generate the Frequency Chaos Game Representation (FCGR) matrix.
+* tuple_index (tuple): The index (row, column) of the *k*-mer in the matrix.
+
+#### Return
+* str: The *k*-mer at the specified index.
