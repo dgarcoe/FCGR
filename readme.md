@@ -19,7 +19,8 @@ To install fcgr you must make sure that your python version is 3.9 +.
 ## Setup
 fcgr is included in PyPI, so you can install it by
 
-'''pip install fcgr-0.1-py3-none-any.whl
+```bash
+pip install fcgr-0.1-py3-none-any.whl
 
 
 
