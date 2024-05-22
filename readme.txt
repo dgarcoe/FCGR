@@ -1,4 +1,4 @@
-\section{hi}
+# Frequency Chaos Game Representation
 
 Frequency Chaos Game Representation (FCGR), an extension of Chaos Game Representation (CGR), has emerged
 as a reliable method for encoding DNA sequences.
