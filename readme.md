@@ -117,7 +117,7 @@ Calculate the frequency dictionary of *k*-mers in a chaos game representation ma
 * frequency_dictionary (dict): A dictionary containing *k*-mer as keys and their frequencies as values.
 
 ```bash   
-### return_kmer_count_individual(key_name: str, fasta_content: str)
+fcgr.return_kmer_count_individual(key_name: str, fasta_content: str)
 ```
 
 Calculate the count of a specific *k*-mer in a given DNA sequence.
