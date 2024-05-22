@@ -21,7 +21,7 @@ To install fcgr you must make sure that your python version is 3.10.13+.
 * pandas = 2.1.4
 * numpy = 1.22.4
 * biopython = 1.81
-* collections
+* collections = 0.1.6
 
 ## Setup
 fcgr can be installed with pip as shown below,
