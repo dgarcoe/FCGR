@@ -15,17 +15,19 @@ The fcgr Python package offers a wide array of functionalities for generating FC
 *Obtain the count of the specified k-mer within the provided DNA sequence.
 
 ## Installation
-To install fcgr you must make sure that your python version is 3.9 +.
+To install fcgr you must make sure that your python version is 3.10.13+.
 
+### Prerequisites
+*pandas = 2.1.4
+*numpy = 1.22.4
+*biopython = 1.81
+*collections
 
 ## Setup
 fcgr can be installed with pip
 
 ```bash
-pip install fcgr-0.1-py3-none-any.whl
+!pip install fcgr-0.1-py3-none-any.whl
 ```
-
-
-3. The Motif finding folder contains the notebook for motif classification and the pickle model.
 
 
