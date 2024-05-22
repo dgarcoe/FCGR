@@ -58,7 +58,7 @@ Generates the key matrix for Frequency Chaos Game Representation (FCGR) for the 
 
 #### Returns
 
-- `np.ndarray`: A 2D numpy array representing the key matrix for CGR.
+- `np.ndarray`: A 2D numpy array representing the key matrix for FCGR.
 
 ```bash
 fcgr.return_kmer_index(kmer: str)
