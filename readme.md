@@ -50,7 +50,7 @@ Reads a FASTA file at the given `file_path` and concatenates the sequences into 
 ```bash
 fcgr.chaos_game_representation_key(kmer_length: int)
 ```
-Generates the key matrix for Chaos Game Representation (CGR) for the given k-mer length.
+Generates the key matrix for Frequency Chaos Game Representation (FCGR) for the given k-mer length.
 
 #### Parameters
 
@@ -59,3 +59,16 @@ Generates the key matrix for Chaos Game Representation (CGR) for the given k-mer
 #### Returns
 
 - `np.ndarray`: A 2D numpy array representing the key matrix for CGR.
+
+```bash
+return_kmer_index(kmer: str)
+```
+Returns the index of a specific k-mer in the Frequency Chaos Game Representation (FCGR) key matrix.
+
+#### Parameters
+
+- `kmer` (str): The k-mer for which the index is to be found.
+
+#### Returns
+
+- `tuple`: The row and column indices of the *k*-mer in the CGR key matrix.
