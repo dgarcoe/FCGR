@@ -8,11 +8,11 @@ The fcgr Python package offers a wide array of functionalities for generating FC
 
 * Read a FASTA file to generate a concatenated DNA sequence.
 * Generate the FCGR kmer matrix key based on the specified kmer length.
-* Retrieve the position of a k-mer within the FCGR key matrix as a tuple.
-* Return the k-mer of the specified length located at the given index.
+* Retrieve the position of a *k*-mer within the FCGR key matrix as a tuple.
+* Return the *k*-mer of the specified length located at the given index.
 * Compute the FCGR matrix for a provided DNA sequence and kmer length using the FCGR kmer key matrix.
-* Calculate the frequency of k-mers with a specified length in the FASTA file and provide them in dictionary format.
-* Obtain the count of the specified k-mer within the provided DNA sequence.
+* Calculate the frequency of *k*-mers with a specified length in the FASTA file and provide them in dictionary format.
+* Obtain the count of the specified *k*-mer within the provided DNA sequence.
 
 ## Installation
 To install fcgr you must make sure that your python version is 3.10.13+.
@@ -50,11 +50,11 @@ Reads a FASTA file at the given `file_path` and concatenates the sequences into 
 ```bash
 fcgr.chaos_game_representation_key(kmer_length: int)
 ```
-Generates the key matrix for Frequency Chaos Game Representation (FCGR) for the given k-mer length.
+Generates the key matrix for Frequency Chaos Game Representation (FCGR) for the given *k*-mer length.
 
 #### Parameters
 
-- `kmer_length` (int): The length of the k-mer.
+- `kmer_length` (int): The length of the *k*-mer.
 
 #### Returns
 
@@ -63,11 +63,11 @@ Generates the key matrix for Frequency Chaos Game Representation (FCGR) for the 
 ```bash
 return_kmer_index(kmer: str)
 ```
-Returns the index of a specific k-mer in the Frequency Chaos Game Representation (FCGR) key matrix.
+Returns the index of a specific *k*-mer in the Frequency Chaos Game Representation (FCGR) key matrix.
 
 #### Parameters
 
-- `kmer` (str): The k-mer for which the index is to be found.
+- `kmer` (str): The *k*-mer for which the index is to be found.
 
 #### Returns
 
