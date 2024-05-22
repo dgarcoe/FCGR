@@ -33,8 +33,9 @@ fcgr can be installed with pip as shown below,
 
 ## fcgr functionality
 
-
+```bash
 ### read_fasta(file_path: str)
+```
 
 Reads a FASTA file at the given `file_path` and concatenates the sequences into a single string.
 
