@@ -4,13 +4,13 @@ Frequency Chaos Game Representation (FCGR), an extension of Chaos Game Represent
 
 ## Usage
 
-* read a FASTA file and generate a concatenated DNA sequence.
-* generate the FCGR kmer matrix key based on the kmer length specified by the user.
-* return kmer position within the FCGR key matrix as a tuple.
-* return the kmer of the specified length located at the given index.
-* compute the FCGR matrix for a provided DNA sequence and kmer length utilizing the FCGR kmer key matrix.
-* calculate the frequency of \textit{k}-mers with a specified length in the FASTA file and provides them in dictionary format.
-* obtain the count of the specified kmer, given in the query, within the provided DNA sequence.
+* Read a FASTA file and generate a concatenated DNA sequence.
+* Generate the FCGR kmer matrix key based on the kmer length specified by the user.
+* Return kmer position within the FCGR key matrix as a tuple.
+* Return the kmer of the specified length located at the given index.
+* Compute the FCGR matrix for a provided DNA sequence and kmer length utilizing the FCGR kmer key matrix.
+* Calculate the frequency of \textit{k}-mers with a specified length in the FASTA file and provides them in dictionary format.
+* Obtain the count of the specified kmer, given in the query, within the provided DNA sequence.
 
 
 1. The package folder includes all the scripts required for comparative analysis between the proposed Python-based FCGR package and the R-based "kaos" package, documentation notebooks, and a PDF file.
