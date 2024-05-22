@@ -113,7 +113,21 @@ Calculate the frequency dictionary of *k*-mers in a chaos game representation ma
 * kmer_length (int): The length of *k*-mers.
 * chaos_game_kmer_array (np.array): Chaos game *k*-mer array if pre-calculated, otherwise None.
 * pseudo_count (bool): Whether to add 1 to each element of the matrix. Defaults to True.
-
 #### Returns
 * frequency_dictionary (dict): A dictionary containing *k*-mer as keys and their frequencies as values.
+
+```bash   
+### return_kmer_count_individual(key_name: str, fasta_content: str)
+```
+
+Calculate the count of a specific *k*-mer in a given DNA sequence.
+
+#### Parameters
+* key_name (str): The *k*-mer sequence for which the count is to be calculated.
+* fasta_content (str): The input DNA sequence in which the *k*-mer count is to be calculated.
+
+#### Returns
+* count (int): The count of the specified *k*-mer in the DNA sequence.
+
+
 
