@@ -38,14 +38,8 @@ fcgr can be installed with pip as shown below,
 
 Reads a FASTA file at the given `file_path` and concatenates the sequences into a single string.
 
-#### Input Arguments
+#### Parameters
 
 The arguments are as follows:
 
-- `adata_source`: the preprocessed `scanpy.anndata` for the source dataset.
-- `save_dir`: name of the directory to save the source model.
-- `vec_size`: dimensionality of the embedding vectors. Defaults to 300 for SCellBOW.
-- `n_worker`: number of worker threads to train the model. For a fully deterministically-reproducible run, limit the model to one worker thread. Defaults to 1 for SCellBOW.
-- `iter`: Number of iterations (epochs) over the corpus. Defaults to 20 for SCellBOW.
-
-
+- `file_path (str): The path to the FASTA file.
