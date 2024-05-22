@@ -18,10 +18,10 @@ The fcgr Python package offers a wide array of functionalities for generating FC
 To install fcgr you must make sure that your python version is 3.10.13+.
 
 ### Prerequisites
-* pandas = 2.1.4 \n
-* numpy = 1.22.4 \n
-* biopython = 1.81 \n
-* collections \n
+* pandas = 2.1.4
+* numpy = 1.22.4
+* biopython = 1.81
+* collections
 
 ## Setup
 fcgr can be installed with pip as shown below,
