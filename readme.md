@@ -37,7 +37,7 @@ fcgr can be installed with pip as shown below,
 ### read_fasta(file_path: str)
 Reads a FASTA file at the given `file_path` and concatenates the sequences into a single string.
 
-#### Parameters
+Parameters
 * file_path (str): The path to the FASTA file.
-#### Return
+Return
 * str: Concatenated DNA sequence from the FASTA file.
