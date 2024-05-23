@@ -163,6 +163,17 @@ Output : (7, 7)
 
 
 
+### Returns the $k$-mer at the specified index in the FCGR kmer key matrix.
+```bash 
+fcgr.return_kmer_at_index(kmer_length=3, tuple_index=(7, 0))
+
+```
+```bash 
+Output: 'GGG'
+```
+
+
+
 
 
 
