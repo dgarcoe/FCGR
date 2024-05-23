@@ -143,17 +143,18 @@ fasta_seq = fcgr.read_fasta(file_path)
 ```bash 
 chaos_game_kmer_array = fcgr.chaos_game_representation_key(kmer_length=2)
 chaos_game_kmer_array
-```
+
 Output : [['TT', 'CT', 'TC', 'CC'],
           ['GT', 'AT', 'GC', 'AC'],
          ['TG', 'CG', 'TA', 'CA'],
          ['GG', 'AG', 'GA', 'AA']]
-
+```
 ### Returns the index of a specific $k$-mer in the FCGR key matrix.
 ```bash 
 fcgr.return_kmer_index(kmer = "AAA")
-```
 Output : (7, 7)
+```
+
 
 
 
