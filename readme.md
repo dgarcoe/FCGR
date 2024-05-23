@@ -190,7 +190,8 @@ Output:[[1., 0., 0., 0., 0., 0., 0., 0.],
 
 ### Calculate the frequency dictionary of $k$-mers
 
-```bash 
+```bash
+fasta_seq_dummy  = "ATTGCNATRATTT" 
 fcgr.chaos_frequency_dictionary(fasta_string= fasta_seq_dummy, kmer_length=3, chaos_game_kmer_array=chaos_game_kmer_array, pseudo_count = False)
 ```
 
@@ -262,7 +263,8 @@ fcgr.chaos_frequency_dictionary(fasta_string= fasta_seq_dummy, kmer_length=3, ch
 
 ### Calculate the count of a specific $k$-mer in a given DNA sequence.
 
-```bash 
+```bash
+fasta_seq_dummy  = "ATTGCNATRATTT" 
 fcgr.return_kmer_count_individual(key_name = "ATT", fasta_content =fasta_seq_dummy)
 ```
 ```bash 
