@@ -1,8 +1,6 @@
 # Frequency Chaos Game Representation
 
-Frequency Chaos Game Representation (FCGR), an extension of Chaos Game Representation (CGR), is a reliable method for encoding DNA sequences.
-
-The Chaos Game Representation (CGR) for DNA utilizes a square with vertices that represent the four nucleotides: guanine (G), thymine (T), adenine (A), and cytosine (C). These vertices are positioned at coordinates (-1, -1), (-1, 1), (1, -1), and (1, 1), respectively, as shown in Fig. (a). In this figure (a), the walker's path for the DNA sequence GTCA is depicted. Starting at the origin, the walker moves halfway towards G, then continues to move halfway towards each subsequent nucleotide, using the new halfway point as the starting point each time, until the entire sequence is processed.
+Frequency Chaos Game Representation (FCGR), an extension of Chaos Game Representation (CGR), is a reliable method for encoding DNA sequences. The CGR for DNA utilizes a square with vertices that represent the four nucleotides: guanine (G), thymine (T), adenine (A), and cytosine (C). These vertices are positioned at coordinates (-1, -1), (-1, 1), (1, -1), and (1, 1), respectively, as shown in Fig. (a). In this figure (a), the walker's path for the DNA sequence GTCA is depicted. Starting at the origin, the walker moves halfway towards G, then continues to move halfway towards each subsequent nucleotide, using the new halfway point as the starting point each time, until the entire sequence is processed.
 
 ![image](https://github.com/abhi1238/FCGR/assets/115684930/34d03daf-2d25-4436-849d-80a0b6cdd9d1)
 
