@@ -148,6 +148,15 @@ Output : [['TT', 'CT', 'TC', 'CC'],
          ['TG', 'CG', 'TA', 'CA'],
          ['GG', 'AG', 'GA', 'AA']]
 
+### Returns the index of a specific $k$-mer in the FCGR key matrix.
+```bash 
+fcgr.return_kmer_index(kmer = "AAA")
+```
+Output : (7, 7)
+
+
+
+
 
 
 
