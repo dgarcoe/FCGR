@@ -136,6 +136,9 @@ Calculate the count of a specific *k*-mer in a given DNA sequence.
 
 ## fcgr example use
 
+The [tutorial section](./tutorial) provides detailed explanations for each functionality, including their docstrings.
+Here is an example of how to use fcgr in Python:
+
 ### Reads a FASTA file at the given `file_path` and concatenates the sequences into a single string.
 ```bash 
 file_path = "GCF_000005845.2_ASM584v2_genomic.fna"
