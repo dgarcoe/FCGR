@@ -260,4 +260,14 @@ fcgr.chaos_frequency_dictionary(fasta_string= fasta_seq_dummy, kmer_length=3, ch
  'AAA': 0.0}
 
 
+### Calculate the count of a specific $k$-mer in a given DNA sequence.
+
+```bash 
+fcgr.return_kmer_count_individual(key_name = "ATT", fasta_content =fasta_seq_dummy)
+```
+```bash 
+output: 2
+```
+
+
 
