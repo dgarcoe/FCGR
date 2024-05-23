@@ -135,5 +135,20 @@ Calculate the count of a specific *k*-mer in a given DNA sequence.
 ```bash 
 file_path = "GCF_000005845.2_ASM584v2_genomic.fna"
 fasta_seq = fcgr.read_fasta(file_path)
+
 ```
+
+### Frequency chaos game kmer matrix key
+
+```bash 
+chaos_game_kmer_array = fcgr.chaos_game_representation_key(kmer_length=3)
+chaos_game_kmer_array
+Output : [['TT', 'CT', 'TC', 'CC'],
+       ['GT', 'AT', 'GC', 'AC'],
+       ['TG', 'CG', 'TA', 'CA'],
+       ['GG', 'AG', 'GA', 'AA']
+
+
+```
+
 
