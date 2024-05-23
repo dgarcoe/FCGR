@@ -169,6 +169,23 @@ fcgr.return_kmer_at_index(kmer_length=3, tuple_index=(7, 0))
 Output: 'GGG'
 ```
 
+### Generates the FCGR matrix for the given DNA sequence.
+```bash 
+fasta_seq_dummy  = "ATTGCNATRATTT" 
+fcgr_freq_matrix, fcgr_key_array = fcgr.chaos_frequency_matrix(fasta_string= fasta_seq_dummy, kmer_length=3, chaos_game_kmer_array=None,  pseudo_count = False)
+fcgr_freq_matrix
+```
+```bash 
+Output:[[1., 0., 0., 0., 0., 0., 0., 0.],
+       [0., 2., 0., 0., 0., 0., 0., 0.],
+       [0., 0., 0., 0., 1., 0., 0., 0.],
+       [0., 0., 0., 0., 0., 0., 0., 0.],
+       [1., 0., 0., 0., 0., 0., 0., 0.],
+       [0., 0., 0., 0., 0., 0., 0., 0.],
+       [0., 0., 0., 0., 0., 0., 0., 0.],
+       [0., 0., 0., 0., 0., 0., 0., 0.]]
+```
+
 
 
 
