@@ -7,10 +7,10 @@ Frequency Chaos Game Representation (FCGR), an extension of Chaos Game Represent
 The fcgr Python package offers a wide array of functionalities for generating FCGR matrix and more:
 
 * Read a FASTA file to generate a concatenated DNA sequence.
-* Generate the FCGR kmer matrix key based on the specified kmer length.
+* Generate the FCGR *k*-mer matrix key based on the specified *k*-mer length.
 * Retrieve the position of a *k*-mer within the FCGR key matrix as a tuple.
 * Return the *k*-mer of the specified length located at the given index.
-* Compute the FCGR matrix for a provided DNA sequence and kmer length using the FCGR kmer key matrix.
+* Compute the FCGR matrix for a provided DNA sequence and kmer length using the FCGR *k*-mer key matrix.
 * Calculate the frequency of *k*-mers with a specified length in the FASTA file and provide them in dictionary format.
 * Obtain the count of the specified *k*-mer within the provided DNA sequence.
 
@@ -95,13 +95,13 @@ This function calculates the Frequency Chaos Game Representation (FCGR) for a gi
 #### Parameters
 * fasta_string (str): The DNA sequence in FASTA format.
 * kmer_length (int): The length of the *k*-mers to consider.
-* chaos_game_kmer_array (np.array, optional): The Frequency Chaos Game Representation (FCGR) key matrix. Defaults to None.
-* pseudo_count (bool, optional): Whether to add 1 to each element of the matrix. Defaults to True.
+* chaos_game_kmer_array (np.array, optional): The Frequency Chaos Game Representation (FCGR) *k*-mer key matrix. Defaults to None.
+* pseudo_count (bool, optional): Whether to add 1 to each *k*-mer of the matrix. Defaults to True.
 
 #### Return
 * tuple: A tuple containing:
   - np.array: The Frequency Chaos Game Representation (FCGR) representing *k*-mer frequencies.
-  - np.array: The Frequency Chaos Game Representation (FCGR) key matrix used.
+  - np.array: The Frequency Chaos Game Representation (FCGR) *k*-mer key matrix used.
  
 ```bash    
 fcgr.chaos_frequency_dictionary(fasta_string: str, kmer_length: int, chaos_game_kmer_array: np.array = None, pseudo_count: bool = True)
@@ -112,7 +112,7 @@ Calculate the frequency dictionary of *k*-mers in a chaos game representation ma
 * fasta_string (str): The input DNA sequence in FASTA format.
 * kmer_length (int): The length of *k*-mers.
 * chaos_game_kmer_array (np.array): Chaos game *k*-mer array if pre-calculated, otherwise None.
-* pseudo_count (bool): Whether to add 1 to each element of the matrix. Defaults to True.
+* pseudo_count (bool): Whether to add 1 to each *k*-mer of the matrix. Defaults to True.
 #### Returns
 * frequency_dictionary (dict): A dictionary containing *k*-mer as keys and their frequencies as values.
 
@@ -146,10 +146,11 @@ chaos_game_kmer_array
 ```
 
 ```bash 
-# Output : [['TT', 'CT', 'TC', 'CC'],
-#          ['GT', 'AT', 'GC', 'AC'],
-#         ['TG', 'CG', 'TA', 'CA'],
-#         ['GG', 'AG', 'GA', 'AA']]
+Output : [['TT', 'CT', 'TC', 'CC'],
+          ['GT', 'AT', 'GC', 'AC'],
+          ['TG', 'CG', 'TA', 'CA'],
+          ['GG', 'AG', 'GA', 'AA']]
+
 ```
 ### Returns the index of a specific $k$-mer in the FCGR key matrix.
 ```bash 
@@ -160,7 +161,7 @@ fcgr.return_kmer_index(kmer = "AAA")
 ```bash 
 Output : (7, 7)
 ```
-### Returns the $k$-mer at the specified index in the FCGR kmer key matrix.
+### Returns the $k$-mer at the specified index in the FCGR *k*-mer key matrix.
 ```bash 
 fcgr.return_kmer_at_index(kmer_length=3, tuple_index=(7, 0))
 
@@ -176,14 +177,23 @@ fcgr_freq_matrix, fcgr_key_array = fcgr.chaos_frequency_matrix(fasta_string= fas
 fcgr_freq_matrix
 ```
 ```bash 
-Output:[[1., 0., 0., 0., 0., 0., 0., 0.],
-       [0., 2., 0., 0., 0., 0., 0., 0.],
-       [0., 0., 0., 0., 1., 0., 0., 0.],
-       [0., 0., 0., 0., 0., 0., 0., 0.],
-       [1., 0., 0., 0., 0., 0., 0., 0.],
-       [0., 0., 0., 0., 0., 0., 0., 0.],
-       [0., 0., 0., 0., 0., 0., 0., 0.],
-       [0., 0., 0., 0., 0., 0., 0., 0.]]
+Output:(array([[1., 0., 0., 0., 0., 0., 0., 0.],
+            [0., 2., 0., 0., 0., 0., 0., 0.],
+            [0., 0., 0., 0., 1., 0., 0., 0.],
+            [0., 0., 0., 0., 0., 0., 0., 0.],
+            [1., 0., 0., 0., 0., 0., 0., 0.],
+            [0., 0., 0., 0., 0., 0., 0., 0.],
+            [0., 0., 0., 0., 0., 0., 0., 0.],
+            [0., 0., 0., 0., 0., 0., 0., 0.]]),
+     array([['TTT', 'CTT', 'TCT', 'CCT', 'TTC', 'CTC', 'TCC', 'CCC'],
+          ['GTT', 'ATT', 'GCT', 'ACT', 'GTC', 'ATC', 'GCC', 'ACC'],
+          ['TGT', 'CGT', 'TAT', 'CAT', 'TGC', 'CGC', 'TAC', 'CAC'],
+          ['GGT', 'AGT', 'GAT', 'AAT', 'GGC', 'AGC', 'GAC', 'AAC'],
+          ['TTG', 'CTG', 'TCG', 'CCG', 'TTA', 'CTA', 'TCA', 'CCA'],
+          ['GTG', 'ATG', 'GCG', 'ACG', 'GTA', 'ATA', 'GCA', 'ACA'],
+          ['TGG', 'CGG', 'TAG', 'CAG', 'TGA', 'CGA', 'TAA', 'CAA'],
+          ['GGG', 'AGG', 'GAG', 'AAG', 'GGA', 'AGA', 'GAA', 'AAA']],
+         dtype='<U3'))
 ```
 
 
