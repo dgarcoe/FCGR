@@ -42,7 +42,7 @@ fcgr can be installed with pip as shown below,
 fcgr.read_fasta(file_path: str)
 ```
 
-Reads a FASTA file at the given `file_path` and concatenates the sequences into a single string.
+Reads a FASTA file at the given `file_path` and concatenates the sequences into a single string. For accurate FCGR matrix creation, it is recommended to use the entire genome sequence from the FASTA file to maintain the DNA sequence's integrity.
 
 #### Parameters
 
@@ -99,7 +99,7 @@ This function generates the FCGR matrix for a given DNA sequence and *k*-mer len
 #### Parameters
 * fasta_string (str): The DNA sequence in FASTA format.
 * kmer_length (int): The length of the *k*-mers to consider.
-* chaos_game_kmer_array (np.array, optional): The FCGR *k*-mer key matrix. Defaults to None.
+* chaos_game_kmer_array (np.array, optional):  FCGR *k*-mer key matrix if precomputed, otherwise it will be calculated internally. Defaults to None, which calculates the FCGR *k*-mer key matrix internally.
 * pseudo_count (bool, optional): Whether to add 1 to each *k*-mer of the matrix. Defaults to True.
 
 #### Return
@@ -115,7 +115,7 @@ Calculate the frequency dictionary of *k*-mers.
 #### Parameters
 * fasta_string (str): The input DNA sequence in FASTA format.
 * kmer_length (int): The length of *k*-mers.
-* chaos_game_kmer_array (np.array): Chaos game *k*-mer array if pre-calculated, otherwise None.
+* chaos_game_kmer_array (np.array): FCGR *k*-mer key matrix if precomputed, otherwise it will be calculated internally. Defaults to None, which calculates the FCGR *k*-mer key matrix internally.
 * pseudo_count (bool): Whether to add 1 to each *k*-mer of the FCGR matrix. Defaults to True.
 #### Returns
 * frequency_dictionary (dict): A dictionary containing *k*-mer as keys and their frequencies as values.
