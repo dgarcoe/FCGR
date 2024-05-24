@@ -63,7 +63,7 @@ Generates the FCGR *k*-mer key matrix for FCGR for the given *k*-mer length.
 
 #### Returns
 
-- `np.ndarray`: A 2D numpy array representing the key matrix for FCGR.
+- `np.ndarray`: A 2D numpy array representing the *k*-mer key matrix for FCGR.
 
 ```bash
 fcgr.return_kmer_index(kmer: str)
