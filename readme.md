@@ -93,9 +93,8 @@ Returns the *k*-mer at the specified index in the FCGR key matrix.
 ```bash
 fcgr.chaos_frequency_matrix(fasta_string: str, kmer_length: int, chaos_game_kmer_array: np.array = None, pseudo_count: bool = True)
 ```
-Generates the chaos frequency matrix for the given DNA sequence.
 
-This function calculates the FCGR matrix for a given DNA sequence and *k*-mer length, using the FCGR key matrix.
+This function generates the FCGR matrix for a given DNA sequence and *k*-mer length, using the FCGR key matrix.
 
 #### Parameters
 * fasta_string (str): The DNA sequence in FASTA format.
